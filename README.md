@@ -20,6 +20,10 @@ It aims to achieve the goal of an efficiency of communication and collaboration 
 
 ## Git-flow
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/achempion/software_process_framework/master/illustrations/git-flow.png" />
+</p>
+
 Gitflow is a tool to decrease entropy into your repository.
 It contains information how to work with branches (develop, release, master),
 how to develop and merge features, how to implement hot fixes.
@@ -45,6 +49,10 @@ or if you haven't enough time to create task prior to fix
 `hotfix/2017-02-02-fix_user_validation`
 
 ## Release history
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/achempion/software_process_framework/master/illustrations/release-history.png" />
+</p>
 
 We need to track our process of development, keep what we do and what we did.
 
@@ -98,6 +106,10 @@ https://github.com/achempion/srelease
 
 ## Commit format
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/achempion/software_process_framework/master/illustrations/commit-format.png" />
+</p>
+
 Each commit should refers to task into your tast management software.
 
 Here is an example:
@@ -107,12 +119,20 @@ Here is an example:
 
 ## Task management
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/achempion/software_process_framework/master/illustrations/task-management.png" />
+</p>
+
 Task management is really on your own.
 
 One thing that required is  
 **each task should contain a link to the PR (pull request)**.
 
 ## How to ship code to QA team
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/achempion/software_process_framework/master/illustrations/ship-to-qa.png" />
+</p>
 
 Here is the most interesting part.
 
@@ -133,6 +153,10 @@ You need a tool to automate process of creating testing branches
 from labeled PRs.
 
 ## Automated deployment
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/achempion/software_process_framework/master/illustrations/automated-deployment.png" />
+</p>
 
 When testing branch builds you need to deploy.  
 This process should be automated too.
