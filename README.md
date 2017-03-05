@@ -54,9 +54,8 @@ or if you haven't enough time to create task prior to fix
   <img src="https://raw.githubusercontent.com/achempion/software_process_framework/master/illustrations/release-history.png" />
 </p>
 
-We need to track our process of development, keep what we do and what we did.
-
-We need to created `releases/` directory to store our release path.
+To track our process of development, keep what we do and what we did,  
+we need to create `releases/` directory to store our release path.
 
 Here is the structure of `releases/` catalog:
 
