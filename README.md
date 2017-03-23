@@ -4,19 +4,19 @@ The document describes the process of developing, testing and shipping software.
 
 It aims to achieve the goal of an efficiency of communication and collaboration between team members.
 
+## Related tools
+
+- [srelease](https://github.com/achempion/srelease) — bash script created to automate release management process
+
+
 ## Topics
 
-0. related tools
 1. git-flow
 2. release history
 3. commit format
 4. task management
 5. how to ship code to QA team
 6. automated deployment
-
-## Related tools
-
-- [srelease](https://github.com/achempion/srelease) — bash script created to automate release management process
 
 ## Git-flow
 
