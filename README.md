@@ -30,8 +30,8 @@ how to develop and merge features, how to implement hot fixes.
 
 Useful links:
 - http://nvie.com/posts/a-successful-git-branching-model/ — blog post
-- https://github.com/nvie/gitflow — repository
-- https://github.com/nvie/gitflow/wiki/Installation — how to install
+- https://github.com/petervanderdoes/gitflow-avh — repository
+- https://github.com/petervanderdoes/gitflow-avh/wiki/Installation — how to install
 
 Each branch should have a format that follows the naming rule:  
 `<task number>-task_description_with_underline`
