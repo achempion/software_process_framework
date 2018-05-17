@@ -26,7 +26,7 @@ It aims to achieve the goal of an efficiency of communication and collaboration 
 
 Gitflow is a tool to decrease entropy into your repository.
 It contains information how to work with branches (develop, release, master),
-how to develop and merge features, how to implement hot fixes.
+how to ship features, how to implement hot fixes.
 
 Useful links:
 - http://nvie.com/posts/a-successful-git-branching-model/ — blog post
@@ -36,16 +36,18 @@ Useful links:
 Each branch should have a format that follows the naming rule:  
 `<task number>-task_description_with_underline`
 
-Feature and Hotfix branches should start with `<task number>`  
-and ends with `task_desctiption`, joins with `-` symbol.
+Feature and Hotfix branches should:
+- start with `<task number>`  
+- end with `-task_desctiption`
 
-Example:
+It's possible to use a date instead of `<task number>`.
 
+**feature**  
 `feature/task-11-sign_up_tests`  
-`feature/task-13-allow_user_to_edit_email`
+`feature/2018-05-17-allow_user_to_edit_email`
 
+**hotfix**  
 `hotfix/task-11-fix_user_validation`  
-or if you haven't enough time to create task prior to fix  
 `hotfix/2017-02-02-fix_user_validation`
 
 ## Release history
@@ -55,7 +57,7 @@ or if you haven't enough time to create task prior to fix
 </p>
 
 To track our process of development, keep what we do and what we did,  
-we need to create `releases/` directory to store our release path.
+we need to create `releases/` directory.
 
 Here is the structure of `releases/` catalog:
 
@@ -73,13 +75,13 @@ Here is the structure of `releases/` catalog:
 
 `.keep` need to keep an empty folder at the git repository
 
-`task-11`, `task-13`, `task-15` is the identification of task at your task management system.
+`task-11`, `task-13`, `task-15` is the identifications of a task at your task management system.
 
-The content of task files should incorporate a description of actions needed to run.
-It may be some custom tasks or action needed to perform the task have been deployed to dev, stage or production.
-Also, you can write some information to the team member who responsible to deploy production releases.
+The content of the task file should describe additional actions needed to be done after deployment, such as:
+- notify someone
+- run some custom command on the server
 
-Here is an example:
+Here is an example of task file:
 
 **releases/current/task-11**
 ```ruby
@@ -87,6 +89,7 @@ Here is an example:
 rake features:task_11
 ```
 
+After, we can automatically concatenate all task files into the release file
 
 **releases/history/2017-02-02**
 ```ruby
@@ -95,12 +98,11 @@ task-11
     rake features:task_11
 ```
 
-`2017-02-02` in `releases/history/2017-02-02` is  
-a date of release branch creation. May to have a postfix.
+`2017-02-02` in `releases/history/2017-02-02` is a date of release branch creation.  
 
-The postfix need if you want to identify the type of release (for example `2017-02-02-backend_team`).
+You can also additionally specify the release pourpose by adding a postfix: `2017-02-02-backend_team`.
 
-Here is a tool to automate work with `releases/`  
+Here is a tool to automate work with `releases/` directory  
 https://github.com/achempion/srelease
 
 ## Commit format
