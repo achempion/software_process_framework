@@ -164,3 +164,9 @@ This process should be automated too.
 
 The clue is that you can go even further and  
 automate running tasks from `releases/current/*`.
+
+## Useful links
+
+[GitLab communication handbook](https://about.gitlab.com/handbook/communication/)
+
+[Is group chat making you sweat? by Jasob Fried, Basecamp](https://m.signalvnoise.com/is-group-chat-making-you-sweat)
